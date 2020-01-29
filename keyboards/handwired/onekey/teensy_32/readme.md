@@ -1,14 +1,19 @@
+# Aymeric
+
+Compile with `make handwired/onekey/teensy_32:default:teensy`.
+
 # Teensy 3.2 onekey
 
-To trigger keypress, short together pins *D5* and *B2* (marked on the PCB as *20* and *19*).
+To trigger keypress, short together pins _D5_ and _B2_ (marked on the PCB as _20_ and _19_).
 
 ## Hardware
 
 ### Pins
+
 When setting matrix pins, you need to use the MCU definitions instead of what is printed on the PCB. Sourced from <https://www.pjrc.com/teensy/schematic32.gif>. The following table can be used to convert between the two.
 
-|  PCB   | MCU | Notes                       |
-|------- |-----|-----------------------------|
+| PCB    | MCU | Notes                       |
+| ------ | --- | --------------------------- |
 | 0      | B16 |                             |
 | 1      | B17 |                             |
 | 2      | D0  |                             |
@@ -33,8 +38,8 @@ When setting matrix pins, you need to use the MCU definitions instead of what is
 | 21/A7  | D6  |                             |
 | 22/A8  | C1  |                             |
 | 23/A9  | C2  |                             |
-| 24/A10 |     | ADC0_DP0 in schematic *[1]* |
-| 25/A11 |     | ADC0_DM0 in schematic *[1]* |
-| 26/A12 |     | ADC0_DP3 in schematic *[1]* |
+| 24/A10 |     | ADC0_DP0 in schematic _[1]_ |
+| 25/A11 |     | ADC0_DM0 in schematic _[1]_ |
+| 26/A12 |     | ADC0_DP3 in schematic _[1]_ |
 
-*[1]* - Currently not configured and may require extra work to implement.
+_[1]_ - Currently not configured and may require extra work to implement.
