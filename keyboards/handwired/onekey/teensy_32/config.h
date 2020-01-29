@@ -19,6 +19,8 @@
 // TODO: including this causes "error: expected identifier before '(' token" errors
 //#include "config_common.h"
 
-#define MATRIX_COL_PINS { D5 }
-#define MATRIX_ROW_PINS { B2 }
+#define MATRIX_COL_PINS \
+    { D4, D2, D3, C3, C4, C6, C7, D1, C0, B0 }
+#define MATRIX_ROW_PINS \
+    { D0, A12, A13, D7 }
 #define UNUSED_PINS
